@@ -11,9 +11,10 @@ kullanır.
 
 ```
 packages/
-  core/            @kasap/core   - paylaşılan agent altyapısı (kütüphane, çalıştırılamaz)
-  berilis-agent/   @kasap/berilis-agent - Berilis Discord destek botu  [1. öncelik, tamamlandı]
-  (roblox-ai, logistics-sdk, listing-optimizer daha sonra eklenecek)
+  core/            @kasap/core          - paylaşılan agent altyapısı (kütüphane, çalıştırılamaz)
+  berilis-agent/   @kasap/berilis-agent - Berilis Discord destek botu       [1. öncelik, tamamlandı]
+  roblox-ai/       @kasap/roblox-ai     - Roblox/Godot AI tasarım asistanı  [2. öncelik, tamamlandı]
+  (logistics-sdk, listing-optimizer daha sonra eklenecek)
 ```
 
 ## Kurulum
@@ -56,11 +57,19 @@ Bkz. [packages/berilis-agent/README.md](packages/berilis-agent/README.md).
 pnpm dev:berilis
 ```
 
-### 2-4. Sıradaki projeler
+### 2. Roblox/Godot AI Tasarım Asistanı (CLI) - tamamlandı
 
-Roblox/Godot AI tasarım asistanı, TruckersMP/lojistik SDK + RAG katmanı, ve e-ticaret
-listing optimizer - master spesifikasyondaki sırayla, Berilis Support Agent'ın kabul
-testlerinden sonra başlayacak.
+Bkz. [packages/roblox-ai/README.md](packages/roblox-ai/README.md).
+
+```bash
+pnpm --filter @kasap/roblox-ai build
+node packages/roblox-ai/dist/cli.js --help
+```
+
+### 3-4. Sıradaki projeler
+
+TruckersMP/lojistik SDK + RAG katmanı, ve e-ticaret listing optimizer - master
+spesifikasyondaki sırayla devam edecek.
 
 ## Geliştirme
 
