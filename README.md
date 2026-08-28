@@ -15,7 +15,7 @@ packages/
   berilis-agent/   @kasap/berilis-agent - Berilis Discord destek botu       [1. öncelik, tamamlandı]
   roblox-ai/       @kasap/roblox-ai     - Roblox/Godot AI tasarım asistanı  [2. öncelik, tamamlandı]
   truckersmp-sdk/  @kasap/truckersmp-sdk - TruckersMP API SDK + RAG doküman Q&A [3. öncelik, tamamlandı]
-  (listing-optimizer daha sonra eklenecek)
+  listing-optimizer/ @kasap/listing-optimizer - E-ticaret SEO + fiyat karşılaştırma [4. öncelik, tamamlandı]
 ```
 
 ## Kurulum
@@ -76,9 +76,16 @@ pnpm --filter @kasap/truckersmp-sdk build
 node packages/truckersmp-sdk/dist/cli.js servers
 ```
 
-### 4. Sıradaki proje
+### 4. E-ticaret Listing Optimizer - tamamlandı
 
-E-ticaret listing optimizer - master spesifikasyondaki sırayla devam edecek.
+Bkz. [packages/listing-optimizer/README.md](packages/listing-optimizer/README.md).
+
+```bash
+pnpm --filter @kasap/listing-optimizer build
+node packages/listing-optimizer/dist/cli.js optimize "ürün açıklaman" --platform trendyol
+```
+
+Master spesifikasyondaki 4 proje de tamamlandı.
 
 ## Geliştirme
 
