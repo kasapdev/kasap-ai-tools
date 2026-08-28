@@ -1,5 +1,8 @@
 # Kasap AI Tools Suite
 
+[![CI](https://github.com/kasapdev/kasap-ai-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/kasapdev/kasap-ai-tools/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 [kasapdev](https://github.com/kasapdev) tarafından geliştirilen, hosting, lojistik, oyun
 geliştirme (Roblox/Godot) ve e-ticaret gibi alanlarda kullanılabilecek, ortak bir çekirdek
 üzerine kurulu açık kaynak AI agent araçları paketi. Herkese açık - isteyen kullanabilir,
@@ -96,3 +99,10 @@ pnpm typecheck   # tüm paketlerde tsc --noEmit
 pnpm test        # tüm paketlerde vitest
 pnpm build       # tüm paketlerde tsc build
 ```
+
+Katkıda bulunmak isterseniz [CONTRIBUTING.md](CONTRIBUTING.md)'e bakın (konvansiyonlar, yeni
+bir paket ekleme deseni).
+
+## Lisans
+
+[MIT](LICENSE)
