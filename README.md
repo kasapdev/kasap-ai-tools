@@ -14,7 +14,8 @@ packages/
   core/            @kasap/core          - paylaşılan agent altyapısı (kütüphane, çalıştırılamaz)
   berilis-agent/   @kasap/berilis-agent - Berilis Discord destek botu       [1. öncelik, tamamlandı]
   roblox-ai/       @kasap/roblox-ai     - Roblox/Godot AI tasarım asistanı  [2. öncelik, tamamlandı]
-  (logistics-sdk, listing-optimizer daha sonra eklenecek)
+  truckersmp-sdk/  @kasap/truckersmp-sdk - TruckersMP API SDK + RAG doküman Q&A [3. öncelik, tamamlandı]
+  (listing-optimizer daha sonra eklenecek)
 ```
 
 ## Kurulum
@@ -66,10 +67,18 @@ pnpm --filter @kasap/roblox-ai build
 node packages/roblox-ai/dist/cli.js --help
 ```
 
-### 3-4. Sıradaki projeler
+### 3. TruckersMP/Lojistik API SDK + AI Wrapper - tamamlandı
 
-TruckersMP/lojistik SDK + RAG katmanı, ve e-ticaret listing optimizer - master
-spesifikasyondaki sırayla devam edecek.
+Bkz. [packages/truckersmp-sdk/README.md](packages/truckersmp-sdk/README.md).
+
+```bash
+pnpm --filter @kasap/truckersmp-sdk build
+node packages/truckersmp-sdk/dist/cli.js servers
+```
+
+### 4. Sıradaki proje
+
+E-ticaret listing optimizer - master spesifikasyondaki sırayla devam edecek.
 
 ## Geliştirme
 
