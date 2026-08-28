@@ -1,6 +1,6 @@
 /**
  * Sabit bilgi bloğu - paket fiyatları ve özellikleri.
- * TODO(Kayra): Aşağıyı gerçek Berilis paket bilgileriyle doldur.
+ * TODO: Aşağıyı gerçek Berilis paket bilgileriyle doldur.
  * Bu metin, fiyat/paket sorularına Claude'a hiç gitmeden doğrudan cevap olarak
  * kullanılır (hem tutarlı hem ücretsiz).
  */

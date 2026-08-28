@@ -1,7 +1,9 @@
 # Kasap AI Tools Suite
 
-Kayra Kasapoğlu'nun işlettiği projeler (Berilis hosting, Sadakat Logistics, Roblox/Godot
-oyun geliştirme, eBay e-ticaret) için ortak bir çekirdek üzerine kurulu AI agent araçları.
+[kasapdev](https://github.com/kasapdev) tarafından geliştirilen, hosting, lojistik, oyun
+geliştirme (Roblox/Godot) ve e-ticaret gibi alanlarda kullanılabilecek, ortak bir çekirdek
+üzerine kurulu açık kaynak AI agent araçları paketi. Herkese açık - isteyen kullanabilir,
+kendi projesine uyarlayabilir.
 
 Monorepo, pnpm workspaces ile yönetilir. Tüm projeler `packages/core` içindeki paylaşılan
 Anthropic API sarmalayıcısını, SQLite tabanlı hafıza/loglama katmanını ve RAG altyapısını
