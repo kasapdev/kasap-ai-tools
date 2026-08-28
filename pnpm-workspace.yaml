@@ -1,0 +1,6 @@
+packages:
+  - "packages/*"
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - '@anthropic-ai/sdk@0.122.0'
