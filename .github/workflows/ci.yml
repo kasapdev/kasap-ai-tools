@@ -24,11 +24,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Typecheck
-        run: pnpm typecheck
-
+      # Build first: @kasap/core is consumed by every other package via its
+      # compiled dist/ output (package.json "types"/"main"), so a clean
+      # checkout has no .d.ts files for typecheck to resolve until core (and
+      # everything else, in topological order) has actually been built.
       - name: Build
         run: pnpm build
+
+      - name: Typecheck
+        run: pnpm typecheck
 
       - name: Test
         run: pnpm test

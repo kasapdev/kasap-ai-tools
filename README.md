@@ -95,9 +95,9 @@ Master spesifikasyondaki 4 proje de tamamlandı.
 ## Geliştirme
 
 ```bash
+pnpm build       # tüm paketlerde tsc build (önce - typecheck @kasap/core'un dist'ine bağımlı)
 pnpm typecheck   # tüm paketlerde tsc --noEmit
 pnpm test        # tüm paketlerde vitest
-pnpm build       # tüm paketlerde tsc build
 ```
 
 Katkıda bulunmak isterseniz [CONTRIBUTING.md](CONTRIBUTING.md)'e bakın (konvansiyonlar, yeni

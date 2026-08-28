@@ -10,16 +10,18 @@ pnpm install
 pnpm --filter @kasap/core build   # diğer paketler @kasap/core'u dist/ üzerinden import eder
 ```
 
-Değişiklik yapmadan önce (ve PR açmadan önce) her zaman şunları çalıştırın:
+Değişiklik yapmadan önce (ve PR açmadan önce) her zaman şu sırayla çalıştırın:
 
 ```bash
+pnpm build       # tüm paketlerde tsc build (önce - typecheck buna bağımlı, aşağı bakın)
 pnpm typecheck   # tüm paketlerde tsc --noEmit
-pnpm build       # tüm paketlerde tsc build
 pnpm test        # tüm paketlerde vitest
 ```
 
-CI (`.github/workflows/ci.yml`) her push/PR'da aynı üç komutu çalıştırır - hepsi geçmeden PR
-merge edilmemeli.
+`build` önce gelmeli: `@kasap/core`'a bağımlı her paket onu derlenmiş `dist/` çıktısı
+üzerinden import eder, temiz bir checkout'ta `dist/` yoksa `typecheck` `@kasap/core` modülünü
+bulamaz. CI (`.github/workflows/ci.yml`) her push/PR'da aynı üç komutu bu sırayla çalıştırır -
+hepsi geçmeden PR merge edilmemeli.
 
 ## Konvansiyonlar
 
