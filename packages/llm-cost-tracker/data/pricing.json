@@ -1,0 +1,21 @@
+{
+  "asOf": "2026-09-04",
+  "note": "Snapshot pricing - VERIFY against each provider's current pricing page before using for real accounting. Anthropic rates sourced from the claude-api skill's reference table (cached 2026-06-24); OpenAI rates are best-effort and unverified here.",
+  "providers": {
+    "anthropic": {
+      "claude-fable-5-1": { "inputPerMillion": 10.0, "outputPerMillion": 50.0 },
+      "claude-fable-5": { "inputPerMillion": 10.0, "outputPerMillion": 50.0 },
+      "claude-opus-5": { "inputPerMillion": 5.0, "outputPerMillion": 25.0 },
+      "claude-opus-4-8": { "inputPerMillion": 5.0, "outputPerMillion": 25.0 },
+      "claude-opus-4-7": { "inputPerMillion": 5.0, "outputPerMillion": 25.0 },
+      "claude-opus-4-6": { "inputPerMillion": 5.0, "outputPerMillion": 25.0 },
+      "claude-sonnet-5": { "inputPerMillion": 2.0, "outputPerMillion": 10.0 },
+      "claude-sonnet-4-6": { "inputPerMillion": 3.0, "outputPerMillion": 15.0 },
+      "claude-haiku-4-5": { "inputPerMillion": 1.0, "outputPerMillion": 5.0 }
+    },
+    "openai": {
+      "gpt-4o": { "inputPerMillion": 2.5, "outputPerMillion": 10.0 },
+      "gpt-4o-mini": { "inputPerMillion": 0.15, "outputPerMillion": 0.6 }
+    }
+  }
+}
