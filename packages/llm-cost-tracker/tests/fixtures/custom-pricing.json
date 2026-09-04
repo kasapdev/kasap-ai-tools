@@ -1,0 +1,9 @@
+{
+  "asOf": "test",
+  "note": "test fixture",
+  "providers": {
+    "anthropic": {
+      "fake-model": { "inputPerMillion": 1, "outputPerMillion": 2 }
+    }
+  }
+}

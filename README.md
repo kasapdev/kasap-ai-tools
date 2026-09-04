@@ -21,6 +21,11 @@ packages/
   roblox-ai/       @kasap/roblox-ai     - Roblox/Godot AI tasarım asistanı  [2. öncelik, tamamlandı]
   truckersmp-sdk/  @kasap/truckersmp-sdk - TruckersMP API SDK + RAG doküman Q&A [3. öncelik, tamamlandı]
   listing-optimizer/ @kasap/listing-optimizer - E-ticaret SEO + fiyat karşılaştırma [4. öncelik, tamamlandı]
+  pdf-invoice-extractor/ @kasap/pdf-invoice-extractor - PDF faturadan yapılandırılmış veri çıkarma
+  repo-doc-chatbot/  @kasap/repo-doc-chatbot  - Herhangi bir repo için RAG destekli Q&A CLI
+  listing-image-bg-remover/ @kasap/listing-image-bg-remover - Ürün fotoğrafından arka plan silme
+  prompt-version-control/ @kasap/prompt-version-control - LLM prompt'ları için yerel versiyon kontrolü
+  llm-cost-tracker/ @kasap/llm-cost-tracker - Çoklu sağlayıcı LLM maliyet takibi
 ```
 
 ## Kurulum
@@ -91,6 +96,22 @@ node packages/listing-optimizer/dist/cli.js optimize "ürün açıklaman" --plat
 ```
 
 Master spesifikasyondaki 4 proje de tamamlandı.
+
+### 5-9. Ek AI araçları
+
+- [packages/pdf-invoice-extractor](packages/pdf-invoice-extractor/README.md) - PDF faturadan
+  (`unpdf` ile gerçek metin katmanı çıkarımı) yapılandırılmış fatura verisi + deterministik
+  toplam doğrulama.
+- [packages/repo-doc-chatbot](packages/repo-doc-chatbot/README.md) - Herhangi bir yerel git
+  reposunu indeksleyip RAG (ya da RAG kapalıyken doğrudan dosya alıntılarıyla) soru yanıtlayan
+  genel amaçlı CLI.
+- [packages/listing-image-bg-remover](packages/listing-image-bg-remover/README.md) - Düz/tekdüze
+  arka planlı ürün fotoğraflarından klasik (ML'siz) flood-fill ile arka plan silme.
+- [packages/prompt-version-control](packages/prompt-version-control/README.md) - Yerel prompt
+  dosyaları için git benzeri, içerik-adresli versiyon kontrolü ve gerçek satır bazlı diff.
+- [packages/llm-cost-tracker](packages/llm-cost-tracker/README.md) - JSONL kullanım
+  loglarından çoklu-sağlayıcı LLM maliyet raporu (fiyat tablosu anlık görüntüdür, kullanmadan
+  önce doğrulayın).
 
 ## Geliştirme
 
